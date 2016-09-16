@@ -1,8 +1,10 @@
 class Foobar
 
   def self.baz(a)
-    # Class method
-    # Call with `Foobar.baz`
+      for i in 0 ... a.size
+	      a[i] = a[i].to_i + 2
+      end
+      return a
   end
 end
 
